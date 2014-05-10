@@ -44,16 +44,6 @@
                                                  sortedBy:BPTorrentAttributes.sortName
                                                 ascending:YES
                                                  delegate:self];
-
-    
-    DPTransmissionClient *client = [[DPTransmissionClient alloc] init];
-    [[DPTransmissionEngine sharedEngine] setClient:client];
-    [client connectCompletion:^{
-        NSLog(@"Connected");
-        [[DPTransmissionEngine sharedEngine] startUpdates];
-    } error:^(NSError *error) {
-        NSLog(@"Failed to connect!");
-    }];
     
 }
 
@@ -88,7 +78,7 @@
 - (void)configureCell:(DPTorrentCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     BPTorrent *torrent = [self.fetchedResults objectAtIndexPath:indexPath];
     [cell updateForTorrent:torrent];
-    //cell.delegate = self;
+    cell.delegate = self;
 }
 
 /*
@@ -141,6 +131,37 @@
 }
 
  */
+
+#pragma mark - DPTorrentCelLDelegate
+
+- (void)torrentCellDidTapActionButton:(DPTorrentCell *)cell {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    BPTorrent *torrent = [self.fetchedResults objectAtIndexPath:indexPath];
+    BPTorrentAction action = [torrent availableAction];
+    switch (action) {
+        case BPTorrentActionPause: {
+            [[DPTransmissionEngine sharedEngine] pauseTorrent:torrent completion:nil error:^(NSError *error) {
+                [self displayError:error];
+            }];
+        } break;
+        case BPTorrentActionResume: {
+            [[DPTransmissionEngine sharedEngine] resumeTorrent:torrent completion:nil error:^(NSError *error) {
+                [self displayError:error];
+            }];
+        } break;
+        default:
+            break;
+    }
+}
+
+- (void)displayError:(NSError *)error {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:error.localizedDescription
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Dismiss"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 
 #pragma mark - NSFetchedResultsControllerDelegate
 

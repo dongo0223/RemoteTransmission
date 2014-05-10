@@ -11,7 +11,8 @@
 @interface DPSettingsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *urlTextField;
 @property (strong, nonatomic) IBOutlet UITextField *intervalTextField;
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 - (IBAction)textFieldReturn:(id)sender;
 - (IBAction)save:(id)sender;
-
+- (IBAction)connect:(id)sender;
 @end

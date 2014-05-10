@@ -7,7 +7,7 @@
 //
 
 #import "DPSettingsViewController.h"
-
+#import "DPTransmissionEngine.h"
 @interface DPSettingsViewController ()
 
 @property NSString *url;
@@ -60,6 +60,8 @@
     self.updateInterval = [settings objectForKey:@"updateInterval"];
     self.intervalTextField.text = [self.updateInterval stringValue];
     NSLog(@"updateInterval: %@", self.updateInterval);
+    
+    [self setConnected:[self isConnected]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -114,6 +116,42 @@
 - (IBAction)textFieldReturn:(id)sender {
     
     [sender resignFirstResponder];
+    
+}
+
+- (IBAction)connect:(id)sender{
+    
+    DPTransmissionClient *client = [[DPTransmissionClient alloc] init];
+    [[DPTransmissionEngine sharedEngine] setClient:client];
+    [client connectToURL:self.url
+        Completion:^{
+            NSLog(@"Connected");
+            [self setConnected:[self isConnected]];
+            [[DPTransmissionEngine sharedEngine] setUpdateInterval:[self.updateInterval doubleValue]];
+            [[DPTransmissionEngine sharedEngine] startUpdates];
+        } error:^(NSError *error) {
+            NSLog(@"Failed to connect!");
+            [self setConnected:[self isConnected]];
+        }
+     ];
+
+}
+
+- (BOOL)isConnected{
+    if([[DPTransmissionEngine sharedEngine] client] != nil){
+        return [[[DPTransmissionEngine sharedEngine] client] isConnected];
+    }
+    return false;
+        
+}
+
+- (void)setConnected:(BOOL)isConnected{
+    if(isConnected){
+        self.statusLabel.text = @"CONNECTED";
+    }else{
+        self.statusLabel.text = @"DISCONNECTED";
+    }
+    
     
 }
 

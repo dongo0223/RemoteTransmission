@@ -7,8 +7,10 @@
 //
 
 #import "DPTorrentCell.h"
-
+#import "DPTransmissionEngine.h"
 @implementation DPTorrentCell
+
+BPTorrent *_torrent;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -53,6 +55,33 @@
         }
         self.torrentStatusStringLabel.text = stats;
     }
+    _torrent = torrent;
+}
+
+
+- (IBAction)actionTapped:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(torrentCellDidTapActionButton:)]) {
+        [self.delegate torrentCellDidTapActionButton:self];
+    }
+}
+
+-(IBAction)changeStatus:(id)sender{
+    if([self.torrentStatusLabel.text isEqualToString:@"STOPPED"]){
+        NSLog(@"Call resume for id(%@)", _torrent.id);
+        [[DPTransmissionEngine sharedEngine] resumeTorrent:_torrent completion:^{
+            NSLog(@"Resume Success!");
+        } error:^(NSError *error) {
+            NSLog(@"Resume Failed!");
+        }];
+    } else if ([self.torrentStatusLabel.text isEqualToString:@"ACTIVE"]){
+        NSLog(@"Call pause for id(%@)", _torrent.id);
+        [[DPTransmissionEngine sharedEngine] pauseTorrent:_torrent completion:^{
+            NSLog(@"Pause Success!");
+        } error:^(NSError *error) {
+            NSLog(@"Pause Failed!");
+        }];
+    }
+
 }
 
 @end

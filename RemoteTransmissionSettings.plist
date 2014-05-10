@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>updateInterval</key>
-	<integer>0</integer>
+	<integer>10</integer>
 	<key>transmissionURL</key>
 	<string>http://192.192.192.145/transmission/rpc</string>
 </dict>

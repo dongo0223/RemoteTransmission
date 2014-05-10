@@ -105,4 +105,30 @@ static void *kvoContext = &kvoContext;
     }
 }
 
+- (void)resumeTorrent:(BPTorrent *)torrent completion:(DPPlainBlock)completionBlock error:(DPErrorBlock)errorBlock {
+    [self.client startTorrent:torrent.idValue completion:^{
+        [_client retrieveTorrent:torrent.idValue completion:^(NSDictionary *torrentDict) {
+            [torrent updateFromDictionary:torrentDict];
+            [[NSManagedObjectContext MR_contextForCurrentThread] save:nil];
+            
+            if (completionBlock != nil) {
+                completionBlock();
+            }
+        } error:errorBlock];
+    } error:errorBlock];
+}
+
+- (void)pauseTorrent:(BPTorrent *)torrent completion:(DPPlainBlock)completionBlock error:(DPErrorBlock)errorBlock {
+    [self.client stopTorrent:torrent.idValue completion:^{
+        [_client retrieveTorrent:torrent.idValue completion:^(NSDictionary *torrentDict) {
+            [torrent updateFromDictionary:torrentDict];
+            [[NSManagedObjectContext MR_contextForCurrentThread] save:nil];
+            
+            if (completionBlock != nil) {
+                completionBlock();
+            }
+        } error:errorBlock];
+    } error:errorBlock];
+}
+
 @end
