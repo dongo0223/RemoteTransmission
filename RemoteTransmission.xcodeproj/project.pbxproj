@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE396D30191E5B4F0090DEAD /* DPTorrentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE396D2F191E5B4F0090DEAD /* DPTorrentTableViewController.m */; };
+		CE396D33191E5BCC0090DEAD /* DPTorrentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE396D32191E5BCC0090DEAD /* DPTorrentCell.m */; };
+		CE41B2EC191D203C004F687D /* DPTransmissionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41B2EB191D203C004F687D /* DPTransmissionClient.m */; };
 		CE7434F1191BF7830056F96C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7434F0191BF7830056F96C /* Foundation.framework */; };
 		CE7434F3191BF7830056F96C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7434F2191BF7830056F96C /* CoreGraphics.framework */; };
 		CE7434F5191BF7830056F96C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7434F4191BF7830056F96C /* UIKit.framework */; };
@@ -14,14 +17,23 @@
 		CE7434FD191BF7830056F96C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7434FC191BF7830056F96C /* main.m */; };
 		CE743501191BF7830056F96C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE743500191BF7830056F96C /* AppDelegate.m */; };
 		CE743504191BF7830056F96C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE743502191BF7830056F96C /* Main.storyboard */; };
-		CE743507191BF7830056F96C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE743506191BF7830056F96C /* FirstViewController.m */; };
-		CE74350A191BF7830056F96C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE743509191BF7830056F96C /* SecondViewController.m */; };
 		CE74350C191BF7830056F96C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE74350B191BF7830056F96C /* Images.xcassets */; };
 		CE743513191BF7830056F96C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE743512191BF7830056F96C /* XCTest.framework */; };
 		CE743514191BF7830056F96C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7434F0191BF7830056F96C /* Foundation.framework */; };
 		CE743515191BF7830056F96C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7434F4191BF7830056F96C /* UIKit.framework */; };
 		CE74351D191BF7830056F96C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE74351B191BF7830056F96C /* InfoPlist.strings */; };
 		CE74351F191BF7830056F96C /* RemoteTransmissionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74351E191BF7830056F96C /* RemoteTransmissionTests.m */; };
+		CEC2E451191E8B8000BD5E80 /* Transfers.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E450191E8B8000BD5E80 /* Transfers.png */; };
+		CEC2E453191E8F3100BD5E80 /* Transfers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E452191E8F3100BD5E80 /* Transfers@2x.png */; };
+		CEC2E456191E90A900BD5E80 /* InfoOptions.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E454191E90A900BD5E80 /* InfoOptions.png */; };
+		CEC2E457191E90A900BD5E80 /* InfoOptions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E455191E90A900BD5E80 /* InfoOptions@2x.png */; };
+		CEC2E45A191E933D00BD5E80 /* DPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2E459191E933D00BD5E80 /* DPSettingsViewController.m */; };
+		CEC2E45C191E9C3400BD5E80 /* RemoteTransmissionSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E45B191E9C3400BD5E80 /* RemoteTransmissionSettings.plist */; };
+		CEE17F02191E1B2E005BD63C /* DPTransmissionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F01191E1B2E005BD63C /* DPTransmissionEngine.m */; };
+		CEE17F0A191E1C59005BD63C /* _BPTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F05191E1C59005BD63C /* _BPTorrent.m */; };
+		CEE17F0B191E1C59005BD63C /* BPTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F07191E1C59005BD63C /* BPTorrent.m */; };
+		CEE17F0C191E1C59005BD63C /* Transmission-iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F08191E1C59005BD63C /* Transmission-iOS.xcdatamodeld */; };
+		FD9E8A9010004FD0B02A3A77 /* libPods-RemoteTransmission.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B936A5BBB548138CA65D7C /* libPods-RemoteTransmission.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21B936A5BBB548138CA65D7C /* libPods-RemoteTransmission.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RemoteTransmission.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36BE45AC5B3448B3883A597C /* Pods-RemoteTransmission.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteTransmission.xcconfig"; path = "Pods/Pods-RemoteTransmission.xcconfig"; sourceTree = "<group>"; };
+		CE396D2E191E5B4F0090DEAD /* DPTorrentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTorrentTableViewController.h; sourceTree = "<group>"; };
+		CE396D2F191E5B4F0090DEAD /* DPTorrentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTorrentTableViewController.m; sourceTree = "<group>"; };
+		CE396D31191E5BCC0090DEAD /* DPTorrentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTorrentCell.h; sourceTree = "<group>"; };
+		CE396D32191E5BCC0090DEAD /* DPTorrentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTorrentCell.m; sourceTree = "<group>"; };
+		CE41B2EA191D203C004F687D /* DPTransmissionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTransmissionClient.h; sourceTree = "<group>"; };
+		CE41B2EB191D203C004F687D /* DPTransmissionClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTransmissionClient.m; sourceTree = "<group>"; };
 		CE7434ED191BF7830056F96C /* RemoteTransmission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteTransmission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7434F0191BF7830056F96C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE7434F2191BF7830056F96C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,16 +66,27 @@
 		CE7434FF191BF7830056F96C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE743500191BF7830056F96C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE743503191BF7830056F96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE743505191BF7830056F96C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CE743506191BF7830056F96C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		CE743508191BF7830056F96C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CE743509191BF7830056F96C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CE74350B191BF7830056F96C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE743511191BF7830056F96C /* RemoteTransmissionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTransmissionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE743512191BF7830056F96C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE74351A191BF7830056F96C /* RemoteTransmissionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemoteTransmissionTests-Info.plist"; sourceTree = "<group>"; };
 		CE74351C191BF7830056F96C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE74351E191BF7830056F96C /* RemoteTransmissionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteTransmissionTests.m; sourceTree = "<group>"; };
+		CEC2E450191E8B8000BD5E80 /* Transfers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Transfers.png; sourceTree = "<group>"; };
+		CEC2E452191E8F3100BD5E80 /* Transfers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Transfers@2x.png"; sourceTree = "<group>"; };
+		CEC2E454191E90A900BD5E80 /* InfoOptions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoOptions.png; sourceTree = "<group>"; };
+		CEC2E455191E90A900BD5E80 /* InfoOptions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InfoOptions@2x.png"; sourceTree = "<group>"; };
+		CEC2E458191E933D00BD5E80 /* DPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPSettingsViewController.h; path = ../DPSettingsViewController.h; sourceTree = "<group>"; };
+		CEC2E459191E933D00BD5E80 /* DPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPSettingsViewController.m; path = ../DPSettingsViewController.m; sourceTree = "<group>"; };
+		CEC2E45B191E9C3400BD5E80 /* RemoteTransmissionSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteTransmissionSettings.plist; sourceTree = SOURCE_ROOT; };
+		CEE17F00191E1B2E005BD63C /* DPTransmissionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTransmissionEngine.h; sourceTree = "<group>"; };
+		CEE17F01191E1B2E005BD63C /* DPTransmissionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTransmissionEngine.m; sourceTree = "<group>"; };
+		CEE17F04191E1C59005BD63C /* _BPTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BPTorrent.h; sourceTree = "<group>"; };
+		CEE17F05191E1C59005BD63C /* _BPTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BPTorrent.m; sourceTree = "<group>"; };
+		CEE17F06191E1C59005BD63C /* BPTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTorrent.h; sourceTree = "<group>"; };
+		CEE17F07191E1C59005BD63C /* BPTorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTorrent.m; sourceTree = "<group>"; };
+		CEE17F09191E1C59005BD63C /* Transmission-iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Transmission-iOS.xcdatamodel"; sourceTree = "<group>"; };
+		CEE17F0F191E20D6005BD63C /* transmission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transmission.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +97,7 @@
 				CE7434F3191BF7830056F96C /* CoreGraphics.framework in Frameworks */,
 				CE7434F5191BF7830056F96C /* UIKit.framework in Frameworks */,
 				CE7434F1191BF7830056F96C /* Foundation.framework in Frameworks */,
+				FD9E8A9010004FD0B02A3A77 /* libPods-RemoteTransmission.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,13 +114,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE41B2E9191D0AE9004F687D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE17F03191E1BB9005BD63C /* Entity */,
+				CE41B2EA191D203C004F687D /* DPTransmissionClient.h */,
+				CE41B2EB191D203C004F687D /* DPTransmissionClient.m */,
+				CEE17F00191E1B2E005BD63C /* DPTransmissionEngine.h */,
+				CEE17F01191E1B2E005BD63C /* DPTransmissionEngine.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CE7434E4191BF7830056F96C = {
 			isa = PBXGroup;
 			children = (
+				CEC2E44F191E8B6100BD5E80 /* Resources */,
 				CE7434F6191BF7830056F96C /* RemoteTransmission */,
 				CE743518191BF7830056F96C /* RemoteTransmissionTests */,
 				CE7434EF191BF7830056F96C /* Frameworks */,
 				CE7434EE191BF7830056F96C /* Products */,
+				36BE45AC5B3448B3883A597C /* Pods-RemoteTransmission.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +154,7 @@
 				CE7434F2191BF7830056F96C /* CoreGraphics.framework */,
 				CE7434F4191BF7830056F96C /* UIKit.framework */,
 				CE743512191BF7830056F96C /* XCTest.framework */,
+				21B936A5BBB548138CA65D7C /* libPods-RemoteTransmission.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,15 +162,20 @@
 		CE7434F6191BF7830056F96C /* RemoteTransmission */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2E45B191E9C3400BD5E80 /* RemoteTransmissionSettings.plist */,
+				CEC2E458191E933D00BD5E80 /* DPSettingsViewController.h */,
+				CEC2E459191E933D00BD5E80 /* DPSettingsViewController.m */,
+				CEE17F0E191E20B5005BD63C /* libtransmission */,
+				CE41B2E9191D0AE9004F687D /* Model */,
 				CE7434FF191BF7830056F96C /* AppDelegate.h */,
 				CE743500191BF7830056F96C /* AppDelegate.m */,
 				CE743502191BF7830056F96C /* Main.storyboard */,
-				CE743505191BF7830056F96C /* FirstViewController.h */,
-				CE743506191BF7830056F96C /* FirstViewController.m */,
-				CE743508191BF7830056F96C /* SecondViewController.h */,
-				CE743509191BF7830056F96C /* SecondViewController.m */,
 				CE74350B191BF7830056F96C /* Images.xcassets */,
 				CE7434F7191BF7830056F96C /* Supporting Files */,
+				CE396D2E191E5B4F0090DEAD /* DPTorrentTableViewController.h */,
+				CE396D2F191E5B4F0090DEAD /* DPTorrentTableViewController.m */,
+				CE396D31191E5BCC0090DEAD /* DPTorrentCell.h */,
+				CE396D32191E5BCC0090DEAD /* DPTorrentCell.m */,
 			);
 			path = RemoteTransmission;
 			sourceTree = "<group>";
@@ -157,6 +209,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CEC2E44F191E8B6100BD5E80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2E454191E90A900BD5E80 /* InfoOptions.png */,
+				CEC2E455191E90A900BD5E80 /* InfoOptions@2x.png */,
+				CEC2E452191E8F3100BD5E80 /* Transfers@2x.png */,
+				CEC2E450191E8B8000BD5E80 /* Transfers.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEE17F03191E1BB9005BD63C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEE17F04191E1C59005BD63C /* _BPTorrent.h */,
+				CEE17F05191E1C59005BD63C /* _BPTorrent.m */,
+				CEE17F06191E1C59005BD63C /* BPTorrent.h */,
+				CEE17F07191E1C59005BD63C /* BPTorrent.m */,
+				CEE17F08191E1C59005BD63C /* Transmission-iOS.xcdatamodeld */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		CEE17F0E191E20B5005BD63C /* libtransmission */ = {
+			isa = PBXGroup;
+			children = (
+				CEE17F0F191E20D6005BD63C /* transmission.h */,
+			);
+			name = libtransmission;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE743522191BF7830056F96C /* Build configuration list for PBXNativeTarget "RemoteTransmission" */;
 			buildPhases = (
+				C46120EF9D4B44829AA7F0E2 /* Check Pods Manifest.lock */,
 				CE7434E9191BF7830056F96C /* Sources */,
 				CE7434EA191BF7830056F96C /* Frameworks */,
 				CE7434EB191BF7830056F96C /* Resources */,
+				25C06D4CF1054990985FCC01 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,9 +318,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC2E456191E90A900BD5E80 /* InfoOptions.png in Resources */,
+				CEC2E453191E8F3100BD5E80 /* Transfers@2x.png in Resources */,
+				CEC2E45C191E9C3400BD5E80 /* RemoteTransmissionSettings.plist in Resources */,
+				CEC2E451191E8B8000BD5E80 /* Transfers.png in Resources */,
 				CE74350C191BF7830056F96C /* Images.xcassets in Resources */,
 				CE7434FB191BF7830056F96C /* InfoPlist.strings in Resources */,
 				CE743504191BF7830056F96C /* Main.storyboard in Resources */,
+				CEC2E457191E90A900BD5E80 /* InfoOptions@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,15 +339,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25C06D4CF1054990985FCC01 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RemoteTransmission-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46120EF9D4B44829AA7F0E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE7434E9191BF7830056F96C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE74350A191BF7830056F96C /* SecondViewController.m in Sources */,
+				CE41B2EC191D203C004F687D /* DPTransmissionClient.m in Sources */,
+				CEE17F0B191E1C59005BD63C /* BPTorrent.m in Sources */,
+				CE396D30191E5B4F0090DEAD /* DPTorrentTableViewController.m in Sources */,
+				CE396D33191E5BCC0090DEAD /* DPTorrentCell.m in Sources */,
 				CE743501191BF7830056F96C /* AppDelegate.m in Sources */,
-				CE743507191BF7830056F96C /* FirstViewController.m in Sources */,
+				CEE17F0A191E1C59005BD63C /* _BPTorrent.m in Sources */,
+				CEE17F02191E1B2E005BD63C /* DPTransmissionEngine.m in Sources */,
+				CEC2E45A191E933D00BD5E80 /* DPSettingsViewController.m in Sources */,
 				CE7434FD191BF7830056F96C /* main.m in Sources */,
+				CEE17F0C191E1C59005BD63C /* Transmission-iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,26 +510,34 @@
 		};
 		CE743523191BF7830056F96C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BE45AC5B3448B3883A597C /* Pods-RemoteTransmission.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemoteTransmission/RemoteTransmission-Prefix.pch";
 				INFOPLIST_FILE = "RemoteTransmission/RemoteTransmission-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		CE743524191BF7830056F96C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BE45AC5B3448B3883A597C /* Pods-RemoteTransmission.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemoteTransmission/RemoteTransmission-Prefix.pch";
 				INFOPLIST_FILE = "RemoteTransmission/RemoteTransmission-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -466,6 +603,7 @@
 				CE743524191BF7830056F96C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE743525191BF7830056F96C /* Build configuration list for PBXNativeTarget "RemoteTransmissionTests" */ = {
 			isa = XCConfigurationList;
@@ -474,8 +612,22 @@
 				CE743527191BF7830056F96C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEE17F08191E1C59005BD63C /* Transmission-iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEE17F09191E1C59005BD63C /* Transmission-iOS.xcdatamodel */,
+			);
+			currentVersion = CEE17F09191E1C59005BD63C /* Transmission-iOS.xcdatamodel */;
+			path = "Transmission-iOS.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE7434E5191BF7830056F96C /* Project object */;
 }
