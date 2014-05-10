@@ -13,7 +13,7 @@ Set up:
 
 2nd step:
   - Run RemoteTransmission app
-  - Settings -> URL: http://<ipAddress>:<port>/transmission/rpc/
+  - Settings -> URL: "http://[ipAddress]:[port]/transmission/rpc/"
   - Settings -> Set update interval (preferd 5-10s)
   - Settings -> tap to save button
   - Settings -> Connect (If connection has been created then the Status label has to be changed to CONNECTED)
