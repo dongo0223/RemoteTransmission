@@ -4,10 +4,13 @@ RemoteTransmission
 Remote client for Transmission
 
 Set up:
+
 1st step:
   - Run Transmission desktop client
   - Preferences -> Remote ->Enable remote access (uncheck authentication - its not supported yet)
   - add some test torrent to client
+  
+
 2nd step:
   - Run RemoteTransmission app
   - Settings -> URL: http://<ipAddress>:<port>/transmission/rpc/

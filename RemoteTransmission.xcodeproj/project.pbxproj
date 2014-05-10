@@ -33,6 +33,7 @@
 		CEC2E462191EC37900BD5E80 /* PauseOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E45E191EC37900BD5E80 /* PauseOn@2x.png */; };
 		CEC2E463191EC37900BD5E80 /* ResumeOn.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E45F191EC37900BD5E80 /* ResumeOn.png */; };
 		CEC2E464191EC37900BD5E80 /* ResumeOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E460191EC37900BD5E80 /* ResumeOn@2x.png */; };
+		CEC2E466191ED2A000BD5E80 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CEC2E465191ED2A000BD5E80 /* README.md */; };
 		CEE17F02191E1B2E005BD63C /* DPTransmissionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F01191E1B2E005BD63C /* DPTransmissionEngine.m */; };
 		CEE17F0A191E1C59005BD63C /* _BPTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F05191E1C59005BD63C /* _BPTorrent.m */; };
 		CEE17F0B191E1C59005BD63C /* BPTorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE17F07191E1C59005BD63C /* BPTorrent.m */; };
@@ -87,6 +88,7 @@
 		CEC2E45E191EC37900BD5E80 /* PauseOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PauseOn@2x.png"; sourceTree = "<group>"; };
 		CEC2E45F191EC37900BD5E80 /* ResumeOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResumeOn.png; sourceTree = "<group>"; };
 		CEC2E460191EC37900BD5E80 /* ResumeOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ResumeOn@2x.png"; sourceTree = "<group>"; };
+		CEC2E465191ED2A000BD5E80 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		CEE17F00191E1B2E005BD63C /* DPTransmissionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTransmissionEngine.h; sourceTree = "<group>"; };
 		CEE17F01191E1B2E005BD63C /* DPTransmissionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTransmissionEngine.m; sourceTree = "<group>"; };
 		CEE17F04191E1C59005BD63C /* _BPTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BPTorrent.h; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		CE7434E4191BF7830056F96C = {
 			isa = PBXGroup;
 			children = (
+				CEC2E465191ED2A000BD5E80 /* README.md */,
 				CEC2E44F191E8B6100BD5E80 /* Resources */,
 				CE7434F6191BF7830056F96C /* RemoteTransmission */,
 				CE743518191BF7830056F96C /* RemoteTransmissionTests */,
@@ -334,6 +337,7 @@
 				CEC2E463191EC37900BD5E80 /* ResumeOn.png in Resources */,
 				CEC2E453191E8F3100BD5E80 /* Transfers@2x.png in Resources */,
 				CEC2E45C191E9C3400BD5E80 /* RemoteTransmissionSettings.plist in Resources */,
+				CEC2E466191ED2A000BD5E80 /* README.md in Resources */,
 				CEC2E451191E8B8000BD5E80 /* Transfers.png in Resources */,
 				CE74350C191BF7830056F96C /* Images.xcassets in Resources */,
 				CEC2E461191EC37900BD5E80 /* PauseOn.png in Resources */,
